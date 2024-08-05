@@ -154,7 +154,7 @@ const Carousel  = () => {
   }, [resetTimer]);
 
   return (
-    <div className="relative overflow-hidden m-10">
+    <div className="relative overflow-hidden my-10 rounded mx-4 lg:mx-0 md:mx-0">
       <div className="absolute top-5 flex gap-1 w-1/2 px-5">
         {data.map((_, index) => (
           <div key={index} className="w-full">
@@ -164,7 +164,7 @@ const Carousel  = () => {
               }`}
             >
               <div
-                className={`h-full bg-[#00A651] ${
+                className={`h-full bg-red ${
                   index + 1 === currentIndex ? "fill" : "empty"
                 }`}
                 style={{
@@ -188,7 +188,7 @@ const Carousel  = () => {
           <div key={index} className="w-full flex-shrink-0">
             <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2">
               <div className="py-10 bg-gray-200">
-                <div className="text-wrap max-w-[500px] px-5 pt-10">
+                <div className="text-wrap max-w-[500px] px-5 pt-10 text-black">
                   <h2>{item.title}</h2>
                   <p className="text-base text-gray-600">{item.text}</p>
                 </div>

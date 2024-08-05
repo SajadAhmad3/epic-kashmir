@@ -359,7 +359,7 @@ module.exports = {
           900:'#FAFAFA',
       },
       black : {
-        DEFAULT : "000"
+        DEFAULT : "#000"
       },
       tertiary : {
         DEFAULT:'#10b981',

@@ -1,11 +1,12 @@
 import React from "react";
 import BannerImg from "../../assets/images/epic-banner.jpg";
+import BannerImg2 from "../../assets/images/pahalgam.jpg";
 
 const Banner: React.FC = () => {
   return (
     <div className="relative w-full h-[600px] overflow-hidden">
       <img
-        src={BannerImg}
+        src={BannerImg2}
         alt="Banner"
         className="object-cover w-full h-full"
       />
@@ -17,7 +18,7 @@ const Banner: React.FC = () => {
           We always try to make our customer Happy. We provide all kind of
           facilities. Your Satisfaction is our main priority
         </p>
-        <button className="bg-[#00A651] text-white px-4 py-2 mt-4  rounded-xl">
+        <button className="bg-[#ff004f] text-white px-4 py-2 mt-4  rounded-md">
           Discover more
         </button>
       </div>

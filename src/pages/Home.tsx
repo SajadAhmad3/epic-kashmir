@@ -11,7 +11,9 @@ const Home = () => {
       <Banner />
       <Service />
       <TopDest />
+      <div className="container">
       <Carousel />
+      </div>
     </div>
   );
 };
