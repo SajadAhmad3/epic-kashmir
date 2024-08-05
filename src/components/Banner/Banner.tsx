@@ -9,8 +9,8 @@ const Banner: React.FC = () => {
         alt="Banner"
         className="object-cover w-full h-full"
       />
-      <div className="absolute top-0 left-0 items-center justify-center text-white text-center flex flex-col h-full w-full">
-        <h1 className="text-[40px] font-bold max-w-[500px]">
+      <div className="absolute top-0 left-0 items-center justify-center text-white text-center flex flex-col h-full w-full px-4">
+        <h1 className="lg:text-[40px] text-[30px] font-bold max-w-[500px]">
           Your Imagination Is Your Only Limit
         </h1>
         <p className="font-medium_1 max-w-[530px]">

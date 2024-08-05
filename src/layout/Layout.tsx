@@ -7,7 +7,7 @@ interface LayoutProps {
 }
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div>
+    <div className="2xl:container mx-auto">
       <Header />
       {children}
       <Footer />
