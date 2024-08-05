@@ -28,3 +28,21 @@ html {
 .nav-link:hover::after {
   width: 100%;
 }
+
+@keyframes fill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.active-progress .fill {
+  animation: fill 3s linear forwards;
+}
+
+.empty {
+  transition: width 0s linear;
+  width: 0%;
+}
