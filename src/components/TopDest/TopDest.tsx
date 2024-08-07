@@ -23,10 +23,10 @@ const TopDest = () => {
     return (
         <div className='container'>
             <h2 className='text-[30px] text-center md:text-start lg:tex-start font-bold my-10'>Top Destinations</h2>
-            <div className='flex space-x-4 mb-10 lg:flex-nowrap md:flex-nowrap flex-wrap items-center justify-center'>
+            <div className='grid grid-cols-4 gap-8 mb-10 items-center justify-center'>
                 {images.map((image, index) => (
-                    <div key={index} className='flex-shrink-0 text-center'>
-                        <div className='w-32 h-32 overflow-hidden rounded-full border-2 border-gray-300'>
+                    <div key={index} className='flex items-center flex-shrink-0 text-center border border-gray-800 p-5 rounded-lg gap-10 transition transform hover:-translate-y-2 hover:shadow-muted-700 hover:shadow-lg cursor-pointer'>
+                        <div className='w-28 h-28 overflow-hidden rounded-full border-2 border-gray-300'>
                             <img
                                 src={image.src}
                                 alt={image.alt}

@@ -4,11 +4,11 @@ import BannerImg2 from "../../assets/images/pahalgam.jpg";
 
 const Banner: React.FC = () => {
   return (
-    <div className="relative w-full h-[600px] px-10">
-        <img
+    <div className="relative w-full h-[600px] px-10 " >
+        <img 
           src={BannerImg2}
           alt="Banner"
-          className="object-cover w-full h-full rounded-lg "
+          className="object-cover w-full h-full rounded-lg"
         />
 
       <div className="absolute top-0 left-0 items-center justify-center text-white text-center flex flex-col h-full w-full px-4">

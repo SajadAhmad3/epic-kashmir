@@ -7,50 +7,54 @@ import pahalgam from "../../assets/images/pahalgam.jpg";
 
 const Popular = () => {
   return (
-    <div className="container">
-      <h2 className='text-[30px] text-center md:text-start lg:tex-start font-bold mb-5'>Must see attractions</h2>
-      <div className="grid lg:grid-cols-5 grid-cols-1 grid-rows-2 gap-4 lg:h-[500px] lg:px-0 px-4">
-        
-        <div className="col-span-2 lg:col-span-1 row-span-2 flex flex-col justify-between gap-4">
-          <img
-            src={dalImg}
-            alt="Cruises"
-            className="w-full h-1/2 object-cover rounded-lg"
-          />
-          <img
-            src={drungImg}
-            alt="Museum Tour"
-            className="w-full h-1/2 object-cover rounded-lg"
-          />
-        </div>
-
-        <div className="col-span-2 row-span-2">
+    <div className="container relative mb-32 bg-">
+      <h2 className="text-[30px] text-center md:text-start lg:text-start font-bold mb-5">
+        Must See Attractions
+      </h2>
+      <div className="grid lg:grid-cols-5 grid-cols-1 grid-rows-2 gap-8 lg:h-[500px] lg:px-0 px-4">
+        <div className="col-span-3 row-span-2 relative overflow-hidden group cursor-pointer rounded-lg">
           <img
             src={gulmargImg}
-            alt="Beach Tours"
-            className="w-full h-full object-cover rounded-lg"
+            alt="Gulmarg"
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
+          <div className="w-full h-0 bg-gradient-to-b from-black/60 to-red rounded-lg absolute left-0 bottom-0 overflow-hidden flex items-center justify-center flex-col px-[40px] text-center text-[14px] transition-height duration-500 group-hover:h-full">
+            <h3>Web Browsing App</h3>
+            <p>
+              This app can take you anywhere on the internet. Its design goals
+              are increased Privacy, Automation, adaptive Semantic
+              Understanding, and efficient Bandwidth Usage.
+            </p>
+          </div>
         </div>
 
-        <div className="col-span-2 row-span-1">
+        <div className="col-span-2 row-span-1 relative overflow-hidden group cursor-pointer rounded-lg mt-[100px] -mb-[100px]">
           <img
             src={pahalgam}
-            alt="City Tours"
-            className="w-full h-full object-cover rounded-lg"
+            alt="Pahalgam"
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
+          <div className="w-full h-0 bg-gradient-to-b from-black/60 to-red rounded-lg absolute left-0 bottom-0 overflow-hidden flex items-center justify-center flex-col px-[40px] text-center text-[14px] transition-height duration-500 group-hover:h-full">
+            <h3>Attraction Title</h3>
+            <p>Description here.</p>
+          </div>
         </div>
 
-        <div className="col-span-2 grid gap-4 lg:grid-cols-2 grid-cols-1">
-          <img
-            src={sonmargImg}
-            alt="Cruises"
-            className=" h-full object-cover rounded-lg "
-          />
+        <div className="col-span-2 row-span-1 relative overflow-hidden group cursor-pointer rounded-lg mt-[100px] -mb-[100px] ">
           <img
             src={gondolaImg}
-            alt="Museum Tour"
-            className=" h-full object-cover rounded-lg "
+            alt="Gondola"
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
+          <div className="w-full h-0 bg-gradient-to-b from-black/60 to-red rounded-lg absolute left-0 bottom-0 overflow-hidden flex items-center justify-center flex-col px-[40px] text-center text-[14px] transition-height duration-500 group-hover:h-full">
+            <h3>Attraction Title</h3>
+            <p>Description here.</p>
+          </div>
+          <div className="absolute bottom-10 right-10">
+            <button className="bg-red-500 text-white px-12 py-2 rounded-lg shadow-lg hover:bg-red-600 transition duration-300">
+              View All
+            </button>
+          </div>
         </div>
       </div>
     </div>
