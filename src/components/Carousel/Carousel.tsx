@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
+import {ArrowLeft, ArrowRight } from 'lucide-react';
 import dalImg from "../../assets/images/dal.jpg";
 import drungImg from "../../assets/images/drung.jpg";
 import gulmargImg from "../../assets/images/gulmarg.jpg";
@@ -6,37 +7,37 @@ import gondolaImg from "../../assets/images/gondola.jpg";
 import sonmargImg from "../../assets/images/sonmarg.jpg";
 
 const data = [
-    {
-      source: dalImg,
-      title: "Client Centric, Trusted Partners",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem. Praesentium, magni. Sunt repellendus eligendi quod illo, consectetur neque consequatur.",
-      alt: "Frame1-img",
-    },
-    {
-      source: drungImg,
-      title: "Innovative Solutions",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem. Praesentium, magni. Sunt repellendus eligendi quod illo, consectetur neque consequatur.",
-      alt: "Frame2-img",
-    },
-    {
-      source: gulmargImg,
-      title: "Dedicated Support",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem. Praesentium, magni. Sunt repellendus eligendi quod illo, consectetur neque consequatur.",
-      alt: "Frame3-img",
-    },
-    {
-      source: gondolaImg,
-      title: "Dedicated Support",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem. Praesentium, magni. Sunt repellendus eligendi quod illo, consectetur neque consequatur.",
-      alt: "Frame3-img",
-    },
-    {
-      source: sonmargImg,
-      title: "Dedicated Support",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem. Praesentium, magni. Sunt repellendus eligendi quod illo, consectetur neque consequatur.",
-      alt: "Frame3-img",
-    },
-  ];
+  {
+    source: dalImg,
+    title: "Dal Lake",
+    text: "Experience the serene beauty of Dal Lake, with its picturesque views and tranquil waters.",
+    alt: "Dal Lake",
+  },
+  {
+    source: drungImg,
+    title: "Drung Waterfall",
+    text: "Marvel at the cascading waters of Drung Waterfall, a hidden gem in the heart of nature.",
+    alt: "Drung Waterfall",
+  },
+  {
+    source: gulmargImg,
+    title: "Gulmarg",
+    text: "Visit Gulmarg, a winter wonderland known for its ski resorts and beautiful landscapes.",
+    alt: "Gulmarg",
+  },
+  {
+    source: gondolaImg,
+    title: "Gondola Ride",
+    text: "Take a thrilling gondola ride in the mountains, offering breathtaking views from above.",
+    alt: "Gondola Ride",
+  },
+  {
+    source: sonmargImg,
+    title: "Sonmarg",
+    text: "Explore the meadows of Sonmarg, a paradise for nature lovers and adventure seekers.",
+    alt: "Sonmarg",
+  },
+];
 
 const slideDuration = 3000;
 
@@ -154,7 +155,7 @@ const Carousel  = () => {
   }, [resetTimer]);
 
   return (
-    <div className="relative overflow-hidden my-10 rounded mx-4 lg:mx-0 md:mx-0">
+    <div className="relative overflow-hidden my-5 rounded-lg mx-4 lg:mx-0 md:mx-0">
       <div className="absolute top-5 flex gap-1 w-1/2 px-5">
         {data.map((_, index) => (
           <div key={index} className="w-full">
@@ -193,7 +194,7 @@ const Carousel  = () => {
                   <p className="text-base text-gray-600">{item.text}</p>
                 </div>
               </div>
-              <div className="h-[350px] relative">
+              <div className="h-[400px] relative">
                 <img src={item.source} alt={item.alt}  className="object-cover w-full h-full" />
               </div>
             </div>
@@ -207,14 +208,14 @@ const Carousel  = () => {
           className="px-2 py-2 bg-white text-black rounded-full"
           disabled={isTransitioning}
         >
-          Left
+          <ArrowLeft />
         </button>
         <button
           onClick={goToNext}
           className="px-2 py-2 bg-white text-black rounded-full"
           disabled={isTransitioning}
         >
-          Right
+          <ArrowRight />
         </button>
       </div>
     </div>

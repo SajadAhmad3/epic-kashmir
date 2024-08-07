@@ -22,7 +22,7 @@ const images = [
 const TopDest = () => {
     return (
         <div className='container'>
-            <h2 className='text-[30px] font-bold text-center py-10'>Top Destinations</h2>
+            <h2 className='text-[30px] text-center md:text-start lg:tex-start font-bold my-10'>Top Destinations</h2>
             <div className='flex space-x-4 mb-10 lg:flex-nowrap md:flex-nowrap flex-wrap items-center justify-center'>
                 {images.map((image, index) => (
                     <div key={index} className='flex-shrink-0 text-center'>
