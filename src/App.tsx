@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Layout from "./layout/Layout";
 import Packages from "./pages/Packages";
-import Services from "./pages/Services";
+import Activities from "./pages/ Activities";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/packages" element={<Packages />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/activities" element={<Activities />} />
         </Routes>
       </Layout>
     </BrowserRouter>

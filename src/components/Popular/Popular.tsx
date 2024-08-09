@@ -7,17 +7,16 @@ import pahalgam from "../../assets/images/pahalgam.jpg";
 
 const Popular = () => {
   return (
-    <div className="container relative mb-32 bg-">
-      <div className="flex justify-between items-center">
-      <h2 className="text-[30px] text-center md:text-start lg:text-start font-bold mb-5">
-        Must See Attractions
-      </h2>
-      <div className="">
-            <button className="bg-red-500 text-white px-12 py-2 rounded-lg shadow-lg hover:bg-red-600 transition duration-300">
-              View All
-            </button>
-          </div>
-
+    <div className="container relative mb-32">
+      <div className="flex flex-col lg:flex-row md:flex-row justify-between items-center pb-4">
+        <h2 className="text-[30px] text-center md:text-start lg:text-start font-bold mb-5">
+          Must See Attractions
+        </h2>
+        <div className="">
+          <button className="bg-red-500 text-white px-12 py-2 rounded-lg shadow-lg hover:bg-red-600 transition duration-300">
+            View All
+          </button>
+        </div>
       </div>
       <div className="grid lg:grid-cols-5 grid-cols-1 grid-rows-2 gap-8 lg:h-[500px] lg:px-0 px-4">
         <div className="col-span-3 row-span-2 relative overflow-hidden group cursor-pointer rounded-lg">

@@ -188,13 +188,13 @@ const Carousel  = () => {
         {slideList.map((item, index) => (
           <div key={index} className="w-full flex-shrink-0">
             <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2">
-              <div className="py-10 bg-gray-200">
+              <div className="py-10 bg-gray-200 ">
                 <div className="text-wrap max-w-[500px] px-5 pt-10 text-black">
                   <h2>{item.title}</h2>
                   <p className="text-base text-gray-600">{item.text}</p>
                 </div>
               </div>
-              <div className="h-[400px] relative">
+              <div className="h-[450px] relative">
                 <img src={item.source} alt={item.alt}  className="object-cover w-full h-full" />
               </div>
             </div>
