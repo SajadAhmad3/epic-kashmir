@@ -3,6 +3,7 @@ import BannerImg from "../../assets/images/epic-banner.jpg";
 import BannerImg2 from "../../assets/images/pahalgam.jpg";
 
 const Banner: React.FC = () => {
+  
   return (
     <div className="relative w-full h-[600px] px-10 " >
         <img 

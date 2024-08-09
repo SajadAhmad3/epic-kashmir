@@ -27,7 +27,7 @@ const Service = () => {
   return (
     <div className='container mx-auto py-12 lg:px-0 px-4'>
       <h2 className='text-[30px] text-center md:text-start lg:tex-start font-bold  mb-5'>Our Service</h2>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
         {services.map((service, index) => (
           <div
             key={index}
