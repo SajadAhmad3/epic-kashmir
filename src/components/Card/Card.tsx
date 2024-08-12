@@ -22,16 +22,11 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ data }) => {
-  const {
-    description,
-    image,
-    title,
-    slug,
-  } = data;
+  const { description, image, title, slug } = data;
 
   return (
     <div
-      className={`hover-pattern-1 flex h-full w-full flex-1 flex-col bg-secondary-800 sm:h-[683px] rounded-lg`}
+      className={`hover-pattern-1 flex h-full w-full flex-1 flex-col bg-gray-800 sm:h-[683px] rounded-lg`}
     >
       <a href={`/packages/${slug}`} className="relative h-[258px] sm:h-[320px]">
         {image && (
@@ -51,14 +46,15 @@ const Card: React.FC<CardProps> = ({ data }) => {
             </h3>
           </div>
 
-          <p className="line-clamp-4 text-xs/[18px] text-secondary-400 sm:text-lg">
+          <p
+            className="line-clamp-4 text-xs/[18px] text-secondary-400 sm:text-lg"
+          >
             {description}
           </p>
         </div>
 
         <div className="flex flex-col gap-4 sm:gap-6">
           <div className="flex flex-col gap-2.5 sm:gap-4">
-
             <div className="border-b border-b-secondary-700" />
           </div>
           <div className="flex justify-between gap-4 sm:hidden">

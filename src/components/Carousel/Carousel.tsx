@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import {ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import dalImg from "../../assets/images/dal.jpg";
 import drungImg from "../../assets/images/drung.jpg";
 import gulmargImg from "../../assets/images/gulmarg.jpg";
@@ -41,7 +41,7 @@ const data = [
 
 const slideDuration = 3000;
 
-const Carousel  = () => {
+const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [savedWidth, setSavedWidth] = useState<number>(0);
@@ -155,8 +155,8 @@ const Carousel  = () => {
   }, [resetTimer]);
 
   return (
-    <div className="relative overflow-hidden my-5 rounded-lg mx-4 lg:mx-0 md:mx-0">
-      <div className="absolute top-5 flex gap-1 w-1/2 px-5">
+    <div className="relative overflow-hidden mt-5 rounded-lg mx-4 lg:mx-0 md:mx-0">
+      <div className="absolute top-5 flex gap-1 lg:w-1/2 w-full px-5">
         {data.map((_, index) => (
           <div key={index} className="w-full">
             <div
@@ -178,7 +178,7 @@ const Carousel  = () => {
       </div>
 
       <div
-        className="flex"
+        className="flex "
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         ref={transitionRef}
         onTransitionEnd={handleTransitionEnd}
@@ -187,15 +187,19 @@ const Carousel  = () => {
       >
         {slideList.map((item, index) => (
           <div key={index} className="w-full flex-shrink-0">
-            <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2">
-              <div className="py-10 bg-gray-200 ">
+            <div className="grid grid-cols-1 grid-rows-2 lg:grid-rows-1  lg:grid-cols-2 md:grid-cols-1">
+              <div className="lg:py-10 md:py-6 py-4 bg-gray-200 ">
                 <div className="text-wrap max-w-[500px] px-5 pt-10 text-black">
                   <h2>{item.title}</h2>
                   <p className="text-base text-gray-600">{item.text}</p>
                 </div>
               </div>
-              <div className="h-[450px] relative">
-                <img src={item.source} alt={item.alt}  className="object-cover w-full h-full" />
+              <div className="lg:h-[450px] h-[225px] relative">
+                <img
+                  src={item.source}
+                  alt={item.alt}
+                  className="object-cover w-full h-full"
+                />
               </div>
             </div>
           </div>
