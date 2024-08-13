@@ -1,9 +1,14 @@
-import React from "react";
+
+import Hero from "../components/Banner/Hero";
 
 type Props = {};
 
 const Activities = (props: Props) => {
-  return <div>Activities</div>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 };
 
 export default Activities;

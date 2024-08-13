@@ -4,7 +4,6 @@ import gulmargImg from "../../assets/images/gulmarg.jpg";
 import gondolaImg from "../../assets/images/gondola.jpg";
 import sonmargImg from "../../assets/images/sonmarg.jpg";
 import pahalgamImg from "../../assets/images/pahalgam.jpg";
-import Slider from "../Slider/Slider";
 
 const images = [
   { src: dalImg, alt: "Dal", text: "Dal" },
@@ -25,7 +24,7 @@ const TopDest = () => {
           Top Destinations
         </h2>
         <div className="">
-          <button className="bg-red-500 text-white px-12 py-2 rounded-lg shadow-lg hover:bg-red-600 transition duration-300 7">
+          <button className="bg-red-600 text-white px-12 py-2 rounded-lg shadow-lg hover:bg-red-500 transition duration-300 7">
             View All
           </button>
         </div>

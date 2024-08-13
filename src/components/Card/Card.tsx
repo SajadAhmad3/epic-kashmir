@@ -62,7 +62,7 @@ const Card: React.FC<CardProps> = ({ data }) => {
               Know More
             </button>
 
-            <button className="bg-red-500 hover:bg-red-600 transition duration-300 text-white px-4 py-2 rounded-lg text-sm">
+            <button className="bg-red-600 hover:bg-red-500 transition duration-300 text-white px-4 py-2 rounded-lg text-sm">
               Book Now
             </button>
           </div>
@@ -71,7 +71,7 @@ const Card: React.FC<CardProps> = ({ data }) => {
               Know More
             </button>
 
-            <button className=" text-white px-4 py-2 text-sm bg-red-500 hover:bg-red-600 transition duration-300 rounded-lg">
+            <button className=" text-white px-4 py-2 text-sm bg-red-600 hover:bg-red-500 transition duration-300 rounded-lg">
               Book Now
             </button>
           </div>

@@ -31,7 +31,7 @@ const Home = () => {
             Our Trending Tours
           </h2>
           <div className="">
-            <button className="bg-red-500 text-white px-12 py-2 rounded-lg shadow-lg hover:bg-red-600 transition duration-300 lg:text-md md:text-sm text-xs">
+            <button className="bg-red-600 text-white px-12 py-2 rounded-lg shadow-lg hover:bg-red-500 transition duration-300 lg:text-md md:text-sm text-xs">
               View All
             </button>
           </div>
