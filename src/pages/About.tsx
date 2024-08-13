@@ -6,7 +6,7 @@ type Props = {};
 const About = (props: Props) => {
   return (
     <div>
-      <div className="relative w-full h-[300px] lg:h-[400px]">
+      <div className="relative w-full h-[200px] lg:h-[400px]">
         <img
           src={sonmargImg}
           alt="Banner"

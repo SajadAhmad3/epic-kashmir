@@ -8,6 +8,8 @@ import Card from "../components/Card/Card";
 import { TrendingPackages } from "../utils/package";
 import Sticker from "../components/Sticker/Sticker";
 import Slider from "../components/Slider/Slider";
+import FAQ from "../components/FAQ/Faq";
+import { faqData } from "../utils/faq";
 
 const Home = () => {
   return (
@@ -57,6 +59,7 @@ const Home = () => {
         </div>
 
         <Sticker />
+        <FAQ faqs={faqData}/>
       </div>
     </div>
   );

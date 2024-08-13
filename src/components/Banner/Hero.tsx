@@ -6,7 +6,7 @@ import { Activities } from "../../utils/activities";
 const Hero = () => {
   return (
     <div>
-      <div className="relative w-full h-[300px] lg:h-[400px]">
+      <div className="relative w-full h-[200px] lg:h-[400px]">
         <img
           src={BannerImg}
           alt="Banner"
