@@ -16,10 +16,6 @@ const About = (props: Props) => {
           <img src={about} alt="Banner" className="object-cover max-w-[20%] max-h-[30%]" />
         </div>
       </div>
-
-      <h2 className="text-xl lg:text-4xl font-bold italic text-center my-8">
-        Choose Your Next Adventure
-      </h2>
     </div>
   );
 };

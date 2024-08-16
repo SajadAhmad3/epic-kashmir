@@ -6,7 +6,7 @@ import { Activities } from "../../utils/activities";
 const Hero = () => {
   return (
     <div>
-      <div className="relative w-full h-[200px] lg:h-[400px]">
+      <div className="relative w-full h-[200px] lg:h-[400px] mb-8">
         <img
           src={BannerImg}
           alt="Banner"
@@ -20,10 +20,6 @@ const Hero = () => {
           />
         </div>
       </div>
-
-      <h2 className="text-xl lg:text-4xl font-bold italic text-center my-8">
-        Choose Your Next Adventure
-      </h2>
 
       <div className="mx-4 lg:mx-0">
         {Activities.map((activity, index) => (

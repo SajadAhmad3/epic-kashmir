@@ -4,6 +4,8 @@ import About from "./pages/About";
 import Layout from "./layout/Layout";
 import Packages from "./pages/Packages";
 import Activities from "./pages/ Activities";
+import ContactUs from "./pages/Contact";
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/packages" element={<Packages />} />
           <Route path="/activities" element={<Activities />} />
+          <Route path="/contactus" element={<ContactUs />} />
         </Routes>
       </Layout>
     </BrowserRouter>

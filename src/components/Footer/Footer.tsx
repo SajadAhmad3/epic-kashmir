@@ -37,7 +37,7 @@ const Footer = () => {
                 Top Destinations
               </span>
             </a>
-            <a href="/">
+            <a href="/contactus">
               <span className=" transform  duration-500  hover:text-red-500 text-sm">
                 Contact Us
               </span>
