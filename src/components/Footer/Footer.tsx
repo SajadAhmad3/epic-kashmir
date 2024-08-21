@@ -32,9 +32,9 @@ const Footer = () => {
                 Packages
               </span>
             </a>
-            <a href="/">
+            <a href="/activities">
               <span className=" transform  duration-500  hover:text-red-500 text-sm">
-                Top Destinations
+                Activities
               </span>
             </a>
             <a href="/contactus">

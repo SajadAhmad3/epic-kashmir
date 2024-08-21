@@ -10,8 +10,14 @@ import Sticker from "../components/Sticker/Sticker";
 import Slider from "../components/Slider/Slider";
 import FAQ from "../components/FAQ/Faq";
 import { faqData } from "../utils/faq";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const redirectToPackages = () => {
+    navigate("/packages");
+  };
   return (
     <div>
       <Banner />
@@ -33,7 +39,10 @@ const Home = () => {
             Our Trending Tours
           </h2>
           <div className="">
-            <button className="bg-red-600 text-white px-12 py-2 rounded-lg shadow-lg hover:bg-red-500 transition duration-300 lg:text-md md:text-sm text-xs">
+            <button
+              className="bg-red-600 text-white px-12 py-2 rounded-lg shadow-lg hover:bg-red-500 transition duration-300 lg:text-md md:text-sm text-xs"
+              onClick={redirectToPackages}
+            >
               View All
             </button>
           </div>
@@ -59,7 +68,7 @@ const Home = () => {
         </div>
 
         <Sticker />
-        <FAQ faqs={faqData}/>
+        <FAQ faqs={faqData} />
       </div>
     </div>
   );

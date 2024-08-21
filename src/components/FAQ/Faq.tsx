@@ -16,7 +16,7 @@ const FAQ: React.FC<FAQProps> = ({ faqs }) => {
       <h2 className="lg:text-[30px] md:text-[30px] text-[20px] text-center md:text-start lg:text-start font-bold mb-5">
         Frequently Asked Questions
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-4 mx-4 lg:mx-0">
         {faqs.map((faq, index) => (
           <FAQItemComponent
             key={index}
