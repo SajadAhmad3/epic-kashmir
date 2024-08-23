@@ -1,13 +1,19 @@
 import BannerImg2 from "../../assets/images/pahalgam.jpg";
 import Limit from "../../assets/images/Limit.svg";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import Modal from "../Modal/Modal";
 
 const Banner = () => {
-  const navigate = useNavigate();
+  const [isModalOpen, setModalOpen] = useState(false);
 
-  const handleRedirect = () => {
-    navigate("/packages");
+  const openModal = () => {
+    setModalOpen(true);
   };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <div className="relative w-full lg:h-[600px] md:h-[600px] h-[300px] lg:px-10 md:px-10 ">
       <img
@@ -28,11 +34,12 @@ const Banner = () => {
         </p>
         <button
           className="bg-red-600 hover:bg-red-500 text-white px-4 py-2 mt-4 rounded-lg lg:text-md md:text-sm text-xs transition duration-300"
-          onClick={handleRedirect}
+          onClick={openModal}
         >
           Discover more
         </button>
       </div>
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };

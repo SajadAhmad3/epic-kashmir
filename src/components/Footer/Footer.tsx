@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
 
         <div className=" ">
-          <h3 className="text-[20px] font-semibold ">Important Links</h3>
+          <h3 className="text-[20px] font-semibold ">Quick Links</h3>
           <div className="flex flex-col gap-4 py-4">
             <a href="/about">
               <span className=" transform  duration-500  hover:text-red-500 text-sm">
