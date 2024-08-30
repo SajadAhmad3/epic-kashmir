@@ -23,7 +23,7 @@ const Packages = (props: Props) => {
         </div>
       </div>
 
-      <div className="container mt-10 ">
+      <div className="container mt-20 ">
         <div className=" grid lg:grid-cols-3 gap-8 md:grid-cols-2 grid-cols-1 mx-4 lg:mx-0">
           {TrendingPackages.map((item, index) => (
             <Card data={item} key={index} />

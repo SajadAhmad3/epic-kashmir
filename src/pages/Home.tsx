@@ -67,7 +67,10 @@ const Home = () => {
           </Slider>
         </div>
 
-        <Sticker />
+        <Sticker
+          heading="Still have questions about the tour?"
+          btnText="Get In Touch"
+        />
         <FAQ faqs={faqData} />
       </div>
     </div>
