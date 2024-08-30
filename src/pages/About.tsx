@@ -1,7 +1,6 @@
-import React from "react";
+
 import sonmargImg from "../assets/images/epic-banner.jpg";
 import about from "../assets/images/About-Us.svg";
-import teamImage from "../assets/images/gulmarg.jpg";
 import Sticker from "../components/Sticker/Sticker";
 import teamData from "../utils/team";
 
@@ -28,7 +27,7 @@ const About = (props: Props) => {
 
       {/* Our Story Section */}
       <div className="container">
-        <section className="px-10 pt-12 bg-gray-800 my-10 mx-4 lg:mx-0 rounded-lg">
+        <section className="px-10 pt-12 bg-gray-800 my-10 mx-4 lg:mx-0 rounded-lg ">
           <h2 className="text-[20px] font-bold text-center text-white">
             Our Story
           </h2>
@@ -40,12 +39,12 @@ const About = (props: Props) => {
           </p>
 
           {/* Our Mission and Values Section */}
-          <section className="px-6 py-12 bg-gray-800 mx-4 lg:mx-0  rounded-lg">
+          <section className="px-6 py-12 bg-gray-800 mx-4 lg:mx-0  rounded-lg ">
             <h2 className="text-[20px] text-center font-bold text-white">
               Our Mission & Values
             </h2>
 
-            <div className="grid max-w-4xl gap-8 mx-auto mt-6 md:grid-cols-3">
+            <div className="grid max-w-[1000px] gap-8 mx-auto mt-6 md:grid-cols-3 ">
               <div className="bg-gray-100 lg:p-10 md:p-10 p-6 rounded-lg text-black transition transform  hover:-translate-y-2 w-full mx-auto">
                 <h3 className="lg:text-2xl md:text-2xl text-[14px] font-semibold mb-2">
                   Excellence
@@ -115,7 +114,7 @@ const About = (props: Props) => {
           <h2 className="text-[20px] font-bold text-center text-white">
             Why Choose Us?
           </h2>
-          <div className="grid max-w-4xl gap-8 mx-auto mt-6 md:grid-cols-3">
+          <div className="grid max-w-[1000px] gap-8 mx-auto mt-6 md:grid-cols-3">
             <div className="bg-gray-100 lg:p-10 md:p-10 p-6 rounded-lg text-black transition transform  hover:-translate-y-2 w-full mx-auto">
               <h3 className="lg:text-2xl md:text-2xl text-[14px] font-semibold mb-2">
                 Local Expertise
