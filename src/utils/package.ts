@@ -11,194 +11,162 @@ interface ImageProps {
 }
 
 interface ICard {
-  currency: string;
   description: string;
-  duration: string;
   image?: ImageProps;
-  price: number;
   title: string;
   rating: number;
   slug: string;
-  fullWidth?: boolean;
 }
 
 export const TrendingPackages: ICard[] = [
   {
-    currency: "USD",
-    description:
-      "High-intensity interval training session to boost metabolism.",
-    duration: "45 minutes",
-    image: {
-      src: dalImg,
-      alt: "HIIT Workout",
-    },
-    price: 25,
-    title: "HIIT Workout",
-    rating: 4,
-    slug: "hiit-workout",
-    fullWidth: false,
-  },
-  {
-    currency: "EUR",
-    description:
-      "Relaxing yoga session focused on flexibility and mindfulness.",
-    duration: "60 minutes",
-    image: {
-      src: drungImg,
-      alt: "Yoga Session",
-    },
-    price: 20,
-    title: "Yoga Session",
-    rating: 5,
-    slug: "yoga-session",
-    fullWidth: false,
-  },
-  {
-    currency: "GBP",
-    description: "Strength training session targeting all major muscle groups.",
-    duration: "50 minutes",
-    image: {
-      src: gondolaImg,
-      alt: "Strength Training",
-    },
-    price: 30,
-    title: "Strength Training",
-    rating: 4,
-    slug: "strength-training",
-    fullWidth: false,
-  },
-  {
-    currency: "USD",
-    description:
-      "Cardio workout designed to increase heart rate and burn calories.",
-    duration: "40 minutes",
+    title: "Skiing in Gulmarg",
+    description: "Experience the thrill of skiing on the snow-covered slopes of Gulmarg, a paradise for adventure enthusiasts.",
     image: {
       src: gulmargImg,
-      alt: "Cardio Workout",
+      alt: "Skiing in Gulmarg",
     },
-    price: 20,
-    title: "Cardio Workout",
-    rating: 3,
-    slug: "cardio-workout",
-    fullWidth: false,
-  },
-  {
-    currency: "EUR",
-    description: "Pilates session to improve core strength and stability.",
-    duration: "55 minutes",
-    image: {
-      src: sonmargImg,
-      alt: "Pilates Session",
-    },
-    price: 28,
-    title: "Pilates Session",
     rating: 5,
-    slug: "pilates-session",
-    fullWidth: false,
+    slug: "skiing-gulmarg",
   },
   {
-    currency: "EUR",
-    description: "Pilates session to improve core strength and stability.",
-    duration: "55 minutes",
-    image: {
-      src: pahalgamImg,
-      alt: "Pilates Session",
-    },
-    price: 28,
-    title: "Pilates Session",
-    rating: 5,
-    slug: "pilates-session",
-    fullWidth: false,
-  },
-];
-
-
-export const PackagesData: ICard[] = [
-  {
-    currency: "USD",
-    description:
-      "High-intensity interval training session to boost metabolism.",
-    duration: "45 minutes",
-    image: {
-      src: dalImg,
-      alt: "HIIT Workout",
-    },
-    price: 25,
-    title: "HIIT Workout",
-    rating: 4,
-    slug: "hiit-workout",
-    fullWidth: false,
-  },
-  {
-    currency: "EUR",
-    description:
-      "Relaxing yoga session focused on flexibility and mindfulness.",
-    duration: "60 minutes",
-    image: {
-      src: drungImg,
-      alt: "Yoga Session",
-    },
-    price: 20,
-    title: "Yoga Session",
-    rating: 5,
-    slug: "yoga-session",
-    fullWidth: false,
-  },
-  {
-    currency: "GBP",
-    description: "Strength training session targeting all major muscle groups.",
-    duration: "50 minutes",
+    title: "Gondola Ride in Gulmarg",
+    description: "Enjoy a breathtaking gondola ride in Gulmarg, the highest cable car ride in Asia, with stunning views of the Himalayas.",
     image: {
       src: gondolaImg,
-      alt: "Strength Training",
+      alt: "Gondola Ride in Gulmarg",
     },
-    price: 30,
-    title: "Strength Training",
-    rating: 4,
-    slug: "strength-training",
-    fullWidth: false,
+    rating: 4.5,
+    slug: "gondola-ride-gulmarg",
   },
   {
-    currency: "USD",
-    description:
-      "Cardio workout designed to increase heart rate and burn calories.",
-    duration: "40 minutes",
-    image: {
-      src: gulmargImg,
-      alt: "Cardio Workout",
-    },
-    price: 20,
-    title: "Cardio Workout",
-    rating: 3,
-    slug: "cardio-workout",
-    fullWidth: false,
-  },
-  {
-    currency: "EUR",
-    description: "Pilates session to improve core strength and stability.",
-    duration: "55 minutes",
+    title: "Trekking in Sonmarg",
+    description: "Explore the beautiful trails of Sonmarg with our guided trekking tours, perfect for both beginners and experienced trekkers.",
     image: {
       src: sonmargImg,
-      alt: "Pilates Session",
+      alt: "Trekking in Sonmarg",
     },
-    price: 28,
-    title: "Pilates Session",
-    rating: 5,
-    slug: "pilates-session",
-    fullWidth: false,
+    rating: 4.8,
+    slug: "trekking-sonmarg",
   },
   {
-    currency: "EUR",
-    description: "Pilates session to improve core strength and stability.",
-    duration: "55 minutes",
+    title: "Houseboat Stay on Dal Lake",
+    description: "Stay in a traditional houseboat on Dal Lake and enjoy the tranquil surroundings and mesmerizing views.",
+    image: {
+      src: dalImg,
+      alt: "Houseboat Stay on Dal Lake",
+    },
+    rating: 4.7,
+    slug: "houseboat-stay-dal-lake",
+  },
+  {
+    title: "Snowboarding in Drung",
+    description: "Join our snowboarding sessions in Drung, a popular destination for winter sports enthusiasts.",
+    image: {
+      src: drungImg,
+      alt: "Snowboarding in Drung",
+    },
+    rating: 4.6,
+    slug: "snowboarding-drung",
+  },
+  {
+    title: "Sightseeing in Pahalgam",
+    description: "Explore the scenic beauty of Pahalgam, known for its lush green meadows, rivers, and valleys.",
     image: {
       src: pahalgamImg,
-      alt: "Pilates Session",
+      alt: "Sightseeing in Pahalgam",
     },
-    price: 28,
-    title: "Pilates Session",
-    rating: 5,
-    slug: "pilates-session",
-    fullWidth: false,
+    rating: 4.3,
+    slug: "sightseeing-pahalgam",
   },
+  {
+    title: "Kashmir Valley Tour",
+    description: "Experience the best of Kashmir with our comprehensive valley tour, including visits to Srinagar, Gulmarg, Sonmarg, and Pahalgam.",
+    image: {
+      src: dalImg,
+      alt: "Kashmir Valley Tour",
+    },
+    rating: 4.9,
+    slug: "kashmir-valley-tour",
+  },
+  {
+    title: "Ladakh Adventure Tour",
+    description: "Embark on an exhilarating adventure through Ladakh, exploring high-altitude deserts, serene monasteries, and the stunning Pangong Lake.",
+    image: {
+      src: "../assets/images/ladakh.jpg", 
+      alt: "Ladakh Adventure Tour",
+    },
+    rating: 4.9,
+    slug: "ladakh-adventure-tour",
+  },
+  {
+    title: "Romantic Honeymoon in Kashmir",
+    description: "Experience a romantic getaway with your loved one in the beautiful valleys of Kashmir, featuring houseboat stays, shikara rides, and candlelit dinners.",
+    image: {
+      src: "../assets/images/honeymoon.jpg", 
+      alt: "Romantic Honeymoon in Kashmir",
+    },
+    rating: 4.8,
+    slug: "romantic-honeymoon-kashmir",
+  },
+  {
+    title: "Couple Retreat in Gulmarg",
+    description: "A serene retreat for couples in Gulmarg, featuring luxury accommodations, spa sessions, and leisure activities amidst the snow-capped mountains.",
+    image: {
+      src: "../assets/images/couple-retreat.jpg", 
+      alt: "Couple Retreat in Gulmarg",
+    },
+    rating: 4.7,
+    slug: "couple-retreat-gulmarg",
+  },
+  {
+    title: "Cultural Heritage Tour of Kashmir",
+    description: "Discover the rich cultural heritage of Kashmir with guided tours of ancient temples, Mughal gardens, and traditional crafts workshops.",
+    image: {
+      src: "../assets/images/cultural-heritage.jpg", 
+      alt: "Cultural Heritage Tour of Kashmir",
+    },
+    rating: 4.5,
+    slug: "cultural-heritage-tour-kashmir",
+  },
+  {
+    title: "Family Vacation in Pahalgam",
+    description: "Enjoy a fun-filled family vacation in Pahalgam with activities like pony rides, river rafting, and sightseeing tours.",
+    image: {
+      src: "../assets/images/family-vacation.jpg", 
+      alt: "Family Vacation in Pahalgam",
+    },
+    rating: 4.6,
+    slug: "family-vacation-pahalgam",
+  },
+  {
+    title: "Photography Tour in Kashmir",
+    description: "Capture the breathtaking beauty of Kashmir with our guided photography tour, perfect for both amateur and professional photographers.",
+    image: {
+      src: "../assets/images/photography-tour.jpg", 
+      alt: "Photography Tour in Kashmir",
+    },
+    rating: 4.8,
+    slug: "photography-tour-kashmir",
+  },
+  {
+    title: "Luxury Houseboat Experience on Nigeen Lake",
+    description: "Relax in the lap of luxury on a houseboat in Nigeen Lake, known for its crystal-clear waters and serene environment.",
+    image: {
+      src: "../assets/images/luxury-houseboat.jpg", 
+      alt: "Luxury Houseboat Experience on Nigeen Lake",
+    },
+    rating: 4.9,
+    slug: "luxury-houseboat-nigeen-lake",
+  },
+  {
+    title: "Wellness and Yoga Retreat in Kashmir",
+    description: "Revitalize your body and mind with our wellness and yoga retreat, set in the tranquil surroundings of Kashmir's scenic landscapes.",
+    image: {
+      src: "../assets/images/yoga-retreat.jpg", 
+      alt: "Wellness and Yoga Retreat in Kashmir",
+    },
+    rating: 4.7,
+    slug: "wellness-yoga-retreat-kashmir",
+  }
 ];

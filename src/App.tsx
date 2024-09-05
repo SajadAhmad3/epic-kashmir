@@ -7,7 +7,7 @@ import Activities from "./pages/ Activities";
 import ContactUs from "./pages/Contact";
 import Attractions from "./pages/Attractions";
 import Destinations from "./pages/Destinations";
-
+import KnowMore from "./pages/[slug]";
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/attractions" element={<Attractions />} />
           <Route path="/destinations" element={<Destinations />} />
+          <Route path="/pages/:slug" element={<KnowMore />} />
         </Routes>
       </Layout>
     </BrowserRouter>

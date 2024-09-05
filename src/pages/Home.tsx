@@ -49,7 +49,7 @@ const Home = () => {
         </div>
 
         <div className=" lg:grid md:grid lg:grid-cols-3 gap-8 md:grid-cols-2 grid-cols-1 mx-4 lg:mx-0 hidden">
-          {TrendingPackages.map((item, index) => (
+          {TrendingPackages.slice(0,6).map((item, index) => (
             <Card data={item} key={index} />
           ))}
         </div>
@@ -61,7 +61,7 @@ const Home = () => {
               skipSnaps: true,
             }}
           >
-            {TrendingPackages.map((item, index) => (
+            {TrendingPackages.slice(0,6).map((item, index) => (
               <Card data={item} key={index} />
             ))}
           </Slider>
